@@ -3,7 +3,7 @@ In this project, I will execute an End-To-End Data Engineering Project on Real-T
 
 ![Architecture](https://github.com/user-attachments/assets/79b7c7b1-4994-48be-8cb0-1a15d51f6a2a)
 
-# This guide outlines the steps to set up a data streaming pipeline using Kafka on an AWS EC2 instance and integrate it with various AWS services.
+This guide outlines the steps to set up a data streaming pipeline using Kafka on an AWS EC2 instance and integrate it with various AWS services.
 
 # Prerequisites
 
