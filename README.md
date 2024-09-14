@@ -8,7 +8,9 @@ This guide outlines the steps to set up a data streaming pipeline using Kafka on
 # Prerequisites
 
 AWS Account: Create an account on AWS.
+
 Python 3.11: Install Python 3.11 on your local machine (required for compatibility with kafka-python library).
+
 AWS CLI: Install the AWS CLI on your local machine.
 
 Step-by-Step Guide
@@ -19,11 +21,11 @@ Step-by-Step Guide
 - Select the Amazon Linux 2 AMI (HVM) for the instance.
 - Allow inbound traffic by modifying the security group settings.
 - Generate an SSH key pair and download it for accessing the instance.
+  
 # 2. Access EC2 Instance via SSH
-
 From your local machine, use the SSH key pair to access the EC2 instance:
 
-ssh -i /path/to/your-key.pem ec2-user@<EC2-Instance-Public-IP>
+# ssh -i /path/to/your-key.pem ec2-user@<EC2-Instance-Public-IP>
 
 # 3. Install and Set Up Kafka on EC2
 Once inside the EC2 instance, install Kafka. Use the following steps (or the commands found in the attached command_kafka.txt file):
@@ -33,20 +35,20 @@ Once inside the EC2 instance, install Kafka. Use the following steps (or the com
 - Create a Kafka topic.
 - Start a Kafka producer and consumer.
 # 4. Access Your AWS Account Locally via AWS CLI
-On your local machine, create an IAM user in your AWS account.
+- On your local machine, create an IAM user in your AWS account.
 
-Generate an access key for the IAM user to enable programmatic access.
+- Generate an access key for the IAM user to enable programmatic access.
 
-Configure the AWS CLI with the generated key pair:
+- Configure the AWS CLI with the generated key pair:
 
-aws configure
+# aws configure
 
-Enter the AWS Access Key ID, Secret Access Key, Region, and Output format as prompted.
+- Enter the AWS Access Key ID, Secret Access Key, Region, and Output format as prompted.
 
 # 5. Install kafka-python Library
 On your local machine, install the kafka-python library, which will allow you to write Kafka producer and consumer scripts:
 
-pip install kafka-python
+# pip install kafka-python
 
 Create producer and consumer scripts (similar to the attached files).
 
